@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Strand Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .questionnaire {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #004d40;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+            accent-color: #00796b; /* Styling the radio buttons */
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #00796b;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="questionnaire">
+        <h1>Educational Strand Questionnaire</h1>
+        <form id="questionnaireForm">
+            <!-- Questions -->
+            <div class="question">
+                <label>1. Are you open to broad studies?</label>
+                <input type="radio" name="q1" value="A"> Yes
+                <input type="radio" name="q1" value="B"> Maybe
+                <input type="radio" name="q1" value="C"> No
+            </div>
+            <div class="question">
+                <label>2. Are you considering a vocational career?</label>
+                <input type="radio" name="q2" value="A"> Yes
+                <input type="radio" name="q2" value="B"> Maybe
+                <input type="radio" name="q2" value="C"> No
+            </div>
+            <div class="question">
+                <label>3. Are you excited about engineering projects?</label>
+                <input type="radio" name="q3" value="A"> Yes
+                <input type="radio" name="q3" value="B"> Maybe
+                <input type="radio" name="q3" value="C"> No
+            </div>
+            <div class="question">
+                <label>4. Do you find cultural studies interesting?</label>
+                <input type="radio" name="q4" value="A"> Yes
+                <input type="radio" name="q4" value="B"> It’s okay
+                <input type="radio" name="q4" value="C"> Not at all
+            </div>
+            <div class="question">
+                <label>5. Do you find budgeting enjoyable?</label>
+                <input type="radio" name="q5" value="A"> Yes
+                <input type="radio" name="q5" value="B"> It’s okay
+                <input type="radio" name="q5" value="C"> Not at all
+            </div>
+            <div class="question">
+                <label>6. Do you like studying history?</label>
+                <input type="radio" name="q6" value="A"> Yes
+                <input type="radio" name="q6" value="B"> Occasionally
+                <input type="radio" name="q6" value="C"> No
+            </div>
+            <div class="question">
+                <label>7. Do you enjoy analyzing texts?</label>
+                <input type="radio" name="q7" value="A"> Yes
+                <input type="radio" name="q7" value="B"> Sometimes
+                <input type="radio" name="q7" value="C"> No
+            </div>
+            <div class="question">
+                <label>8. Do you find multiple topics interesting?</label>
+                <input type="radio" name="q8" value="A"> Yes
+                <input type="radio" name="q8" value="B"> It’s okay
+                <input type="radio" name="q8" value="C"> Not at all
+            </div>
+            <div class="question">
+                <label>9. Do you like hands-on work?</label>
+                <input type="radio" name="q9" value="A"> Yes
+                <input type="radio" name="q9" value="B"> Sometimes
+                <input type="radio" name="q9" value="C"> No
+            </div>
+            <div class="question">
+                <label>10. Do you enjoy working with numbers?</label>
+                <input type="radio" name="q10" value="A"> Yes
+                <input type="radio" name="q10" value="B"> Sometimes
+                <input type="radio" name="q10" value="C"> No
+            </div>
+            <div class="question">
+                <label>11. Are you interested in human behavior?</label>
+                <input type="radio" name="q11" value="A"> Yes
+                <input type="radio" name="q11" value="B"> A little
+                <input type="radio" name="q11" value="C"> Not really
+            </div>
+            <div class="question">
+                <label>12. Do you find vocational training interesting?</label>
+                <input type="radio" name="q12" value="A"> Yes
+                <input type="radio" name="q12" value="B"> It’s okay
+                <input type="radio" name="q12" value="C"> Not at all
+            </div>
+            <div class="question">
+                <label>13. Are you interested in different fields?</label>
+                <input type="radio" name="q13" value="A"> Yes
+                <input type="radio" name="q13" value="B"> A little
+                <input type="radio" name="q13" value="C"> Not really
+            </div>
+            <div class="question">
+                <label>14. Are you interested in technical skills?</label>
+                <input type="radio" name="q14" value="A"> Yes
+                <input type="radio" name="q14" value="B"> A little
+                <input type="radio" name="q14" value="C"> Not really
+            </div>
+            <div class="question">
+                <label>15. Do you like organizing tasks?</label>
+                <input type="radio" name="q15" value="A"> Yes
+                <input type="radio" name="q15" value="B"> Occasionally
+                <input type="radio" name="q15" value="C"> No
+            </div>
+            <div class="question">
+                <label>16. Are you excited about philosophy?</label>
+                <input type="radio" name="q16" value="A"> Yes
+                <input type="radio" name="q16" value="B"> Maybe
+                <input type="radio" name="q16" value="C"> No
+            </div>
+            <div class="question">
+                <label>17. Are you interested in business topics?</label>
+                <input type="radio" name="q17" value="A"> Yes
+                <input type="radio" name="q17" value="B"> A little
+                <input type="radio" name="q17" value="C"> Not really
+            </div>
+            <div class="question">
+                <label>18. Do you enjoy practical problem-solving?</label>
+                <input type="radio" name="q18" value="A"> Yes
+                <input type="radio" name="q18" value="B"> Occasionally
+                <input type="radio" name="q18" value="C"> No
+            </div>
+            <div class="question">
+                <label>19. Do you enjoy math problems?</label>
+                <input type="radio" name="q19" value="A"> Yes
+                <input type="radio" name="q19" value="B"> Sometimes
+                <input type="radio" name="q19" value="C"> No
+            </div>
+            <div class="question">
+                <label>20. Do you enjoy various subjects?</label>
+                <input type="radio" name="q20" value="A"> Yes
+                <input type="radio" name="q20" value="B"> Sometimes
+                <input type="radio" name="q20" value="C"> No
+            </div>
+            <div class="question">
+                <label>21. Are you interested in science experiments?</label>
+                <input type="radio" name="q21" value="A"> Yes
+                <input type="radio" name="q21" value="B"> A little
+                <input type="radio" name="q21" value="C"> Not really
+            </div>
+            <div class="question">
+                <label>22. Do you like working with technology?</label>
+                <input type="radio" name="q22" value="A"> Yes
+                <input type="radio" name="q22" value="B"> Occasionally
+                <input type="radio" name="q22" value="C"> No
+            </div>
+            <div class="question">
+                <label>23. Do you like diverse tasks?</label>
+                <input type="radio" name="q23" value="A"> Yes
+                <input type="radio" name="q23" value="B"> Occasionally
+                <input type="radio" name="q23" value="C"> No
+            </div>
+            <div class="question">
+                <label>24. Do you find scientific theories engaging?</label>
+                <input type="radio" name="q24" value="A"> Yes
+                <input type="radio" name="q24" value="B"> It’s okay
+                <input type="radio" name="q24" value="C"> Not at all
+            </div>
+            <div class="question">
+                <label>25. Are you considering a career in finance or business?</label>
+                <input type="radio" name="q25" value="A"> Yes
+                <input type="radio" name="q25" value="B"> Maybe
+                <input type="radio" name="q25" value="C"> No
+            </div>
+            <!-- End of question block -->
+
+            <button type="button" onclick="processAnswers()">Submit</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function processAnswers() {
+            const form = document.getElementById('questionnaireForm');
+            const formData = new FormData(form);
+            let scores = {
+                ABM: 0,
+                GAS: 0,
+                HUMMS: 0,
+                STEM: 0,
+                TVL: 0
+            };
+
+            formData.forEach((value, key) => {
+                if (value === 'A') {
+                    switch (key) {
+                        case 'q5': case 'q10': case 'q15': case 'q17': case 'q25':
+                            scores.ABM += 2; break;
+                        case 'q1': case 'q8': case 'q13': case 'q20': case 'q23':
+                            scores.GAS += 2; break;
+                        case 'q4': case 'q6': case 'q7': case 'q11': case 'q16':
+                            scores.HUMMS += 2; break;
+                        case 'q3': case 'q19': case 'q21': case 'q22': case 'q24':
+                            scores.STEM += 2; break;
+                        case 'q2': case 'q9': case 'q12': case 'q14': case 'q18':
+                            scores.TVL += 2; break;
+                    }
+                } else if (value === 'B') {
+                    switch (key) {
+                        case 'q5': case 'q10': case 'q15': case 'q17': case 'q25':
+                            scores.ABM += 1; break;
+                        case 'q1': case 'q8': case 'q13': case 'q20': case 'q23':
+                            scores.GAS += 1; break;
+                        case 'q4': case 'q6': case 'q7': case 'q11': case 'q16':
+                            scores.HUMMS += 1; break;
+                        case 'q3': case 'q19': case 'q21': case 'q22': case 'q24':
+                            scores.STEM += 1; break;
+                        case 'q2': case 'q9': case 'q12': case 'q14': case 'q18':
+                            scores.TVL += 1; break;
+                    }
+                }
+            });
+
+            let highestScore = Math.max(scores.ABM, scores.GAS, scores.HUMMS, scores.STEM, scores.TVL);
+            let suggestion = '';
+
+            if (highestScore === scores.ABM) {
+                suggestion = 'You might be interested in the Accountancy, Business, and Management (ABM) strand.';
+            } else if (highestScore === scores.GAS) {
+                suggestion = 'You might be interested in the General Academic Strand (GAS).';
+            } else if (highestScore === scores.HUMMS) {
+                suggestion = 'You might be interested in the Humanities and Social Sciences (HUMSS) strand.';
+            } else if (highestScore === scores.STEM) {
+                suggestion = 'You might be interested in the Science, Technology, Engineering, and Mathematics (STEM) strand.';
+            } else if (highestScore === scores.TVL) {
+                suggestion = 'You might be interested in the Technical-Vocational-Livelihood (TVL) strand.';
+            } else {
+                suggestion = 'It seems like you have diverse interests. Consider exploring different strands to find your best fit.';
+            }
+
+            document.getElementById('result').innerText = suggestion;
+        }
+    </script>
+
+</body>
+</html>
